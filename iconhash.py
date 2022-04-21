@@ -5,6 +5,8 @@ import requests
 import codecs
 import sys
 
+print("Input the Url of the favicon.ico on some website:\n")
+
 response = requests.get(sys.argv[1])
 
 favicon = codecs.encode(response.content,"base64")
